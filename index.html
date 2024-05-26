@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="create-todo">
+      <div class="create-todo-content">
+        <h2 class="visually-hidden">Create new todo here</h2>
+        <div class="create-container container">
+          <div class="logo-theme">
+            <img
+              class="logo-img"
+              src="image/logo.svg"
+              alt="Logo"
+              width="167"
+              height="40"
+            />
+            <button class="logo-toggler theme-toggler" id="themeToggler">
+              <span class="theme-content"></span>
+            </button>
+          </div>
+
+          <form class="" id="form-create">
+            <input
+              class="create-todo-input"
+              id="form-input"
+              type="text"
+              name="newTodo"
+              placeholder="Create a new todo…"
+              minlength="3"
+              maxlength="25"
+              spellcheck="false"
+              autocomplete="off"
+              autofocus
+              required
+            />
+
+            <span class="circle"></span>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="todos todo-wrapper" id="list-group-todo">
+        <div class="list-item">
+          <label for="inn">
+            <p></p>
+            <input type="checkbox" name="inn" id="inn" />
+          </label>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- <section class="section-todos">
+      <div class="todos todo-wrapper container">
+        <ul class="todo-list" id="list-group-todo"></ul>
+        <div class="todo-list-bottom-wrapper">
+          <span class="todo-count" id="todo-count">count</span>
+          <div class="todo-list-bottom-center">
+            <p>all</p>
+            <p>active</p>
+            <p>completed</p>
+          </div>
+          <span class="todo-list-bottom-end">Clear completed</span>
+        </div>
+      </div>
+    </section> -->
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
